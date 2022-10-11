@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/safal07/cypress-ci/issues"
   },
-  "homepage": "https://github.com/safal07/cypress-ci#readme"
+  "homepage": "https://github.com/safal07/cypress-ci#readme",
+  "dependencies": {
+    "cypress": "^10.10.0"
+  }
 }
