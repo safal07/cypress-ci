@@ -1,11 +1,5 @@
 pipeline {
-	agent {
-		// this image provides everything needed to run Cypress
-		docker {
-			image 'cypress/included:3.4.0'
-		}
-	}
-
+	agent any
     stages {
         stage('Build') {
             steps {
