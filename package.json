@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ci": "cypress --version",
-    "mock": "node -v",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",

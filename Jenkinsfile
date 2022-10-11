@@ -9,19 +9,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'npm ci'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm run mock'
-                sh 'npm run ci'
+                sh 'npm run test'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+      
     }
 }
