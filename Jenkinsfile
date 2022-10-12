@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install --force'
+                sh 'npm install --cache /'
             }
         }
         stage('Test') {
