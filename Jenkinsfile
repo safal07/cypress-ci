@@ -9,12 +9,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'CYPRESS_CACHE_FOLDER=./tmp/Cypress npm install --cache path/to/some/folder'
+                sh 'npm -v & node -v'
             }
         }
         stage('Test') {
             steps {
-                sh 'CYPRESS_CACHE_FOLDER=./tmp/Cypress npm run test'
+                sh 'npm run test'
             }
         }
       
