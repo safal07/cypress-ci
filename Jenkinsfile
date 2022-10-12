@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install --cache path/to/some/folder'
+                sh 'cypress install && npm install --cache path/to/some/folder'
             }
         }
         stage('Test') {
