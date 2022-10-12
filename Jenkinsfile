@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo chown -R 501:20 "/.npm" && npm install'
+                sh 'sudo npm cache clean --force  && npm install'
             }
         }
         stage('Test') {
