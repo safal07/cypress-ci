@@ -7,11 +7,11 @@ pipeline {
 	}
 
     stages {
-        stage('Build') {
-            steps {
-                sh 'npm cache clean --force  && npm install'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         sh 'npm cache clean --force  && npm install'
+        //     }
+        // }
         stage('Test') {
             steps {
                 sh 'npm run test'
