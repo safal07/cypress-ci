@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		docker {
-			image 'cypress/base:10'
+			image 'cypress/included:3.4.0'
 		}
 	}
 	options {
@@ -10,14 +10,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm ci'
+                echo 'test'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'npm run test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'npm run test'
+        //     }
+        // }
       
     }
 }

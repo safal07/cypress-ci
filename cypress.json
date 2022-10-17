@@ -1,0 +1,9 @@
+{
+  "e2e": {
+    "integrationFolder": "cypress/e2e",
+    "chromeWebSecurity": false
+  },
+
+  "numTestsKeptInMemory": 0,
+  "test": "ATBBj4Rp3rnUSm7bVJgqJva6XLYd6776EF04"
+}
