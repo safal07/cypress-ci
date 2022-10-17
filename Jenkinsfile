@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		docker {
-			image 'cypress/included:3.4.0',
+			image 'cypress/included:3.4.0'
 			args '-it -v $PWD:/e2e -w /e2e'
 		}
 	}
