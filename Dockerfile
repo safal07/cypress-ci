@@ -1,6 +1,5 @@
-FROM cypress/base:10
+FROM cypress/included:3.4.0
 
-RUN npm install cypress fs-extra
+RUN npm install fs-extra 
 
-
-CMD ["ls"]
+CMD ["cypress", "run" "--env configFile=qa"]
